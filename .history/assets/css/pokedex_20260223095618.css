@@ -1,0 +1,12 @@
+.pokemons { display: grid; grid-template-columns: 1fr; list-style: none; padding: 0; }
+.pokemon { margin: .5rem; padding: 1rem; border-radius: 1rem; color: #fff; display: flex; flex-direction: column; }
+.pokemon .name { text-transform: capitalize; font-weight: bold; font-size: 1.25rem; }
+/* Exemplo de cores por tipo */
+.grass { background-color: #48d0b0; }
+.fire { background-color: #fb6c6c; }
+.water { background-color: #76bdfe; }
+.electric { background-color: #ffd86e; }
+/* Adicione os outros tipos conforme necessário */
+.pokemon .detail { display: flex; align-items: center; justify-content: space-between; }
+.pokemon img { max-width: 100%; height: 70px; }
+@media screen and (min-width: 600px) { .pokemons { grid-template-columns: 1fr 1fr; } }
